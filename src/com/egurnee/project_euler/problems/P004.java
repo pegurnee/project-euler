@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**0
  * Work for Project Euler Problem 4
  * 
@@ -6,7 +6,7 @@ package com.egurnee.projecteuler;
  * @version 0.0.1, 10/01/13
  *
  */
-public class Problem004 {
+public class P004 {
 
 	public static void main(String[] args) {
 		int target = 999;

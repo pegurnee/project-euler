@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 20
  * 
@@ -8,7 +8,7 @@ package com.egurnee.projecteuler;
  */
 import java.math.BigInteger;
 
-public class Problem020 {
+public class P020 {
 
 	public static void main(String[] args) {
 		int solution = 0;		

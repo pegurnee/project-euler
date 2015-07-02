@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 20
  * 
@@ -6,7 +6,7 @@ package com.egurnee.projecteuler;
  * @version 0.0.1, 10/02/13
  *
  */
-public class Problem049 {
+public class P049 {
 
 	public static void main(String[] args) {
 		String formula = "";

@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 12
  * 
@@ -7,7 +7,7 @@ package com.egurnee.projecteuler;
  *
  */
 
-public class Problem012 {
+public class P012 {
 
 	public static void main(String[] args) {
 		long triangle = 0;

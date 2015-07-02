@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 14
  * 
@@ -6,7 +6,7 @@ package com.egurnee.projecteuler;
  * @version 0.0.1, 10/01/13
  *
  */
-public class Problem014 {
+public class P014 {
 	protected static int testCount = 0;
 	public static void main(String[] args) {
 		long limit = 1000000, solution = 0;

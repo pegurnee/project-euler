@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 1
  * 
@@ -6,7 +6,7 @@ package com.egurnee.projecteuler;
  * @version 0.0.1, 10/01/13
  *
  */
-public class Problem001 {
+public class P001 {
 
 	public static void main(String[] args) {
 		int solution = 0;

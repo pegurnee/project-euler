@@ -1,4 +1,4 @@
-package com.egurnee.projecteuler;
+package com.egurnee.project_euler.problems;
 /**
  * Work for Project Euler Problem 50
  * 
@@ -8,7 +8,7 @@ package com.egurnee.projecteuler;
  */
 import java.util.Arrays;
 
-public class Problem050 {
+public class P050 {
 	private static long[] primes = new long[0];
 	
 	public static void main(String[] args) {
