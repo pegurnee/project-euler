@@ -13,50 +13,49 @@ public class P004 extends EulerSolution {
 
 	public static void main(String[] args) {
 		int target = 999;
-		//int limit = (int)Math.pow(target, 2);
+		// int limit = (int)Math.pow(target, 2);
 		String solution = "0";
 		String formula = "a";
-		//int w = 0;
+		// int w = 0;
 		int z = (target * target) + 1;
-		theLoop:
-			for (int x = target; x > 99; x--) {
-				for (int y = target; y > 99; y--) {
-					//System.out.println(x + " " + y);
-					String pal = "" + (x * y);
-					StringBuilder sb = new StringBuilder(pal);
-					String rPal = new String(sb.reverse());
+		theLoop: for (int x = target; x > 99; x--) {
+			for (int y = target; y > 99; y--) {
+				// System.out.println(x + " " + y);
+				String pal = "" + (x * y);
+				StringBuilder sb = new StringBuilder(pal);
+				String rPal = new String(sb.reverse());
 
-					if (pal.equals(rPal)) {
-						formula = " " + " " + x + " x " + y;
-						//System.out.println(formula);
-						//break theLoop;
-						if (Integer.parseInt(pal) > Integer.parseInt(solution)) {
-							solution = pal;
-							formula = " " + x + " x " + y + " = " + pal;
-							System.out.println(formula);
-							//break theLoop;
+				if (pal.equals(rPal)) {
+					formula = " " + " " + x + " x " + y;
+					// System.out.println(formula);
+					// break theLoop;
+					if (Integer.parseInt(pal) > Integer.parseInt(solution)) {
+						solution = pal;
+						formula = " " + x + " x " + y + " = " + pal;
+						System.out.println(formula);
+						// break theLoop;
 
-						}
 					}
-					for (int w = x; w < target && ; w++) {
-						if ((w * y) > (x * x) && (x < w) && ((w * y) < (y * y))) {
-							System.out.println("DUDE!");
-							x = w;
-							break;
-						}
-					}
-					z = x * y;
 				}
-
+				for (int w = x; w < target; w++) {
+					if (((w * y) > (x * x)) && (x < w) && ((w * y) < (y * y))) {
+						System.out.println("DUDE!");
+						x = w;
+						break theLoop;
+					}
+				}
+				z = x * y;
 			}
 
-		//		for (int x = 9; x > 0; x++) {
-		//			for (int y = 9; y > ; y--) {
-		//				if (x * y < )
-		//				formula = " " + x + " x " + y + " = " + (x * y);
-		//				System.out.println(formula);
-		//			}
-		//		}
+		}
+
+		// for (int x = 9; x > 0; x++) {
+		// for (int y = 9; y > ; y--) {
+		// if (x * y < )
+		// formula = " " + x + " x " + y + " = " + (x * y);
+		// System.out.println(formula);
+		// }
+		// }
 		System.out.println(solution);
 		System.out.println(formula);
 	}
