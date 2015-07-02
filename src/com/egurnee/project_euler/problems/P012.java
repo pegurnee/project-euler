@@ -1,7 +1,10 @@
 package com.egurnee.project_euler.problems;
+
+import com.egurnee.project_euler.util.EulerLibrary;
+
 /**
  * Work for Project Euler Problem 12
- * 
+ *
  * @author Eddie Gurnee
  * @version 0.0.1, 10/01/13
  *
@@ -15,19 +18,16 @@ public class P012 {
 		for (int i = 1; numFactors < 500; i++) {
 			triangle += i;
 			numFactors = 0;
-			if (isPerfectSquare(triangle)) {
+			if (EulerLibrary.isPerfectSquare(triangle)) {
 				numFactors++;
 			}
 			for (int j = 1; j <= Math.sqrt(triangle); j++) {
-				if (triangle % j == 0) {
+				if ((triangle % j) == 0) {
 					numFactors += 2;
 				}
 			}
 		}
 		System.out.println(triangle);
-	}	
-	public static boolean isPerfectSquare(long n) {	 
-		long root = (long)Math.sqrt(n);
-		return (root * root) == n;
 	}
+
 }
