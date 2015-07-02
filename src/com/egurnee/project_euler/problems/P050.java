@@ -10,8 +10,9 @@ package com.egurnee.project_euler.problems;
 import java.util.Arrays;
 
 import com.egurnee.project_euler.util.EulerLibrary;
+import com.egurnee.project_euler.util.EulerSolution;
 
-public class P050 {
+public class P050 extends EulerSolution {
 	private static long[] primes = new long[0];
 
 	public static void addPrime(long nextLong) {
@@ -30,6 +31,13 @@ public class P050 {
 			}
 		}
 
-		System.out.println(primes[0] + " " + primes[18]);
+		final String solution1 = primes[0] + " " + primes[18];
+		System.out.println(solution1);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
 	}
 }

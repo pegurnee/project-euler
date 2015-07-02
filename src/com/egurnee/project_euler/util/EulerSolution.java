@@ -5,6 +5,9 @@ public abstract class EulerSolution implements Solution, Runnable {
 
 	@Override
 	public final String getSolution() {
+		if (this.solution == null) {
+			this.run();
+		}
 		return this.solution;
 	}
 

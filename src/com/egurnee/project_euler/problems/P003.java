@@ -1,6 +1,7 @@
 package com.egurnee.project_euler.problems;
 
 import com.egurnee.project_euler.util.EulerLibrary;
+import com.egurnee.project_euler.util.EulerSolution;
 
 /**
  * Work for Project Euler Problem 3
@@ -9,7 +10,7 @@ import com.egurnee.project_euler.util.EulerLibrary;
  * @version 0.0.1, 10/01/13
  *
  */
-public class P003 {
+public class P003 extends EulerSolution {
 
 	public static void main(String[] args) {
 		long target = 600851475143L;
@@ -23,6 +24,12 @@ public class P003 {
 			}
 		}
 		System.out.println(solution);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
 	}
 
 }

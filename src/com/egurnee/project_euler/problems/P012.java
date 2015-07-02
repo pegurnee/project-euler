@@ -1,6 +1,7 @@
 package com.egurnee.project_euler.problems;
 
 import com.egurnee.project_euler.util.EulerLibrary;
+import com.egurnee.project_euler.util.EulerSolution;
 
 /**
  * Work for Project Euler Problem 12
@@ -10,7 +11,7 @@ import com.egurnee.project_euler.util.EulerLibrary;
  *
  */
 
-public class P012 {
+public class P012 extends EulerSolution {
 
 	public static void main(String[] args) {
 		long triangle = 0;
@@ -28,6 +29,12 @@ public class P012 {
 			}
 		}
 		System.out.println(triangle);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
 	}
 
 }
