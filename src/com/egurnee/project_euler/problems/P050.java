@@ -12,7 +12,8 @@ import java.util.Arrays;
 import com.egurnee.project_euler.util.EulerLibrary;
 import com.egurnee.project_euler.util.EulerSolution;
 
-public class P050 extends EulerSolution {
+public class P050
+extends EulerSolution {
 	private static long[] primes = new long[0];
 
 	public static void addPrime(long nextLong) {
@@ -38,6 +39,16 @@ public class P050 extends EulerSolution {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		long solution = 0;
+		long limit = 100;
 
+		addPrime(2L);
+		for (long x = 3; x < limit; x += 2) {
+			if (EulerLibrary.isPrime(x)) {
+				addPrime(x);
+			}
+		}
+
+		this.solution = primes[0] + " " + primes[18];
 	}
 }

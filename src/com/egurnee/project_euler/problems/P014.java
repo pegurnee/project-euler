@@ -9,7 +9,8 @@ import com.egurnee.project_euler.util.EulerSolution;
  * @version 0.0.1, 10/01/13
  *
  */
-public class P014 extends EulerSolution {
+public class P014
+	extends EulerSolution {
 	protected static int testCount = 0;
 
 	public static void collatzSeq(long num) {
@@ -40,6 +41,18 @@ public class P014 extends EulerSolution {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		long limit = 1000000, solution = 0;
+		int highestCount = 0;
 
+		for (long i = 1; i < limit; i++) {
+			testCount = 0;
+			collatzSeq(i);
+			if (testCount > highestCount) {
+				highestCount = testCount;
+				solution = i;
+			}
+		}
+
+		this.solution = solution + " " + highestCount;
 	}
 }

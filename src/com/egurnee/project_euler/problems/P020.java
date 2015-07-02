@@ -11,7 +11,8 @@ import java.math.BigInteger;
 
 import com.egurnee.project_euler.util.EulerSolution;
 
-public class P020 extends EulerSolution {
+public class P020
+	extends EulerSolution {
 
 	public static void main(String[] args) {
 		int solution = 0;
@@ -31,6 +32,17 @@ public class P020 extends EulerSolution {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
+		int solution = 0;
+		int limit = 100;
+		BigInteger factorialized = new BigInteger("1");
+		for (int i = 1; i <= limit; i++) {
+			String num = "" + i;
+			factorialized = factorialized.multiply(new BigInteger(num));
+		}
+		String str = "" + factorialized;
+		for (int i = 0; i < str.length(); i++) {
+			solution += Integer.parseInt(str.substring(i, i + 1));
+		}
+		this.solution = "" + solution;
 	}
 }

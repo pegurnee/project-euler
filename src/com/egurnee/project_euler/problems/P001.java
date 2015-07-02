@@ -9,7 +9,8 @@ import com.egurnee.project_euler.util.EulerSolution;
  * @version 0.0.1, 10/01/13
  *
  */
-public class P001 extends EulerSolution {
+public class P001
+	extends EulerSolution {
 
 	public static void main(String[] args) {
 		int solution = 0;
@@ -27,6 +28,15 @@ public class P001 extends EulerSolution {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
+		int solution = 0;
+		int limit = 1000;
+		for (int x = 1; x < limit; x++) {
+			if ((x % 3) == 0) {
+				solution += x;
+			} else if ((x % 5) == 0) {
+				solution += x;
+			}
+		}
+		this.solution = "" + solution;
 	}
 }

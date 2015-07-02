@@ -16,7 +16,7 @@ import com.egurnee.project_euler.io.EulerFileReader;
 import com.egurnee.project_euler.util.EulerSolution;
 
 public class P013
-extends EulerSolution {
+	extends EulerSolution {
 
 	public static void main(String[] args) {
 		Iterator<String> ostrS = null;
@@ -51,6 +51,22 @@ extends EulerSolution {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		Iterator<String> ostrS = null;
+
+		try {
+			ostrS = EulerFileReader.getStringArrayFromFile("013.eul");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.err.println("file not found");
+			System.exit(-1);
+		}
+
+		BigInteger sum = new BigInteger(ostrS.next());
+		for (; ostrS.hasNext();) {
+			BigInteger addend = new BigInteger(ostrS.next());
+			sum = sum.add(addend);
+		}
+		this.solution = sum.toString().substring(sum.toString().length() - 10);
 
 	}
 }

@@ -86,6 +86,6 @@ public class P011
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
+		this.solution = "" + toArray(20);
 	}
 }
